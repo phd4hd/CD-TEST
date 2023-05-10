@@ -4,4 +4,3 @@ public class NachKaufabschluss {
 		System.out.println("Vielleicht können wir Ihnen weitere Prodkute geben?");
 	}
 }
-
