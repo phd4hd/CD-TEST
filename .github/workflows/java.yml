@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'java/**'
+      
+  workflow_dispatch:
 
 jobs:
   compile:
