@@ -1,0 +1,21 @@
+name: Compile a Java File
+
+on:
+  push:
+    paths:
+      - 'java/**'
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: temurin
+    - name: Compile
+      working-directory: java
+      run: javac *.java
